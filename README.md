@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![PageMonk Banner](https://via.placeholder.com/1200x300/6366f1/ffffff?text=PageMonk+-+AI+Document+Intelligence)
+<img src="logo.png" alt="PageMonk Logo" width="400"/>
 
 **Transform your documents into structured, intelligent data with AI-powered processing**
 
