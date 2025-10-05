@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <!-- Llama body -->
+  <path d="M140 100 C140 80, 160 60, 180 60 C220 60, 240 80, 240 120 L240 300 C240 340, 220 360, 180 360 C160 360, 140 340, 140 300 Z" fill="#000"/>
+  
+  <!-- Llama head -->
+  <ellipse cx="180" cy="180" rx="40" ry="50" fill="#fff"/>
+  <ellipse cx="180" cy="180" rx="38" ry="48" fill="#000" stroke="#000" stroke-width="2"/>
+  <ellipse cx="180" cy="180" rx="35" ry="45" fill="#fff"/>
+  
+  <!-- Ears -->
+  <ellipse cx="155" cy="140" rx="15" ry="25" fill="#000" transform="rotate(-20 155 140)"/>
+  <ellipse cx="205" cy="140" rx="15" ry="25" fill="#000" transform="rotate(20 205 140)"/>
+  
+  <!-- Eyes -->
+  <path d="M165 170 C165 165, 170 165, 170 170" stroke="#000" stroke-width="2" fill="none"/>
+  <path d="M190 170 C190 165, 195 165, 195 170" stroke="#000" stroke-width="2" fill="none"/>
+  
+  <!-- Nose -->
+  <path d="M175 185 L185 185 M180 185 L180 190" stroke="#000" stroke-width="2"/>
+  
+  <!-- Body details -->
+  <path d="M160 250 C180 240, 200 250, 220 240" stroke="#fff" stroke-width="3" fill="none"/>
+  <path d="M160 280 C180 270, 200 280, 220 270" stroke="#fff" stroke-width="3" fill="none"/>
+  
+  <!-- Text -->
+  <text x="320" y="250" font-family="Arial, sans-serif" font-size="100" font-weight="bold" fill="#000">PAGE</text>
+  <text x="320" y="350" font-family="Arial, sans-serif" font-size="100" font-weight="bold" fill="#000">MONK</text>
+</svg>

@@ -1,0 +1,14 @@
+{
+  "name": "Contact Information",
+  "description": "Extract contact details from business cards, resumes, or documents",
+  "schema_definition": {
+    "name": "string",
+    "email": "string", 
+    "phone": "string",
+    "company": "string",
+    "position": "string",
+    "address": "string",
+    "website": "string",
+    "linkedin": "string"
+  }
+}

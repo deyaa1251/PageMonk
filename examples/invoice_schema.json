@@ -1,0 +1,25 @@
+{
+  "name": "Invoice Data",
+  "description": "Extract invoice information for accounting and bookkeeping",
+  "schema_definition": {
+    "invoice_number": "string",
+    "invoice_date": "string",
+    "due_date": "string",
+    "vendor_name": "string",
+    "vendor_address": "string",
+    "customer_name": "string",
+    "customer_address": "string",
+    "total_amount": "number",
+    "tax_amount": "number",
+    "currency": "string",
+    "items": [
+      {
+        "description": "string",
+        "quantity": "number",
+        "unit_price": "number",
+        "total": "number"
+      }
+    ],
+    "payment_terms": "string"
+  }
+}

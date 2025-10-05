@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+sqlalchemy
+requests
+pydantic
+ollama
+python-magic
+aiofiles
+PyPDF2
+Pillow

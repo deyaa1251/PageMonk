@@ -1,0 +1,35 @@
+{
+  "name": "Legal Contract",
+  "description": "Extract key terms and parties from legal contracts",
+  "schema_definition": {
+    "contract_title": "string",
+    "contract_date": "string",
+    "effective_date": "string",
+    "expiration_date": "string",
+    "parties": [
+      {
+        "name": "string",
+        "role": "string",
+        "address": "string",
+        "legal_entity_type": "string"
+      }
+    ],
+    "contract_value": "number",
+    "currency": "string",
+    "key_terms": [
+      {
+        "term": "string",
+        "description": "string"
+      }
+    ],
+    "obligations": [
+      {
+        "party": "string",
+        "obligation": "string"
+      }
+    ],
+    "termination_conditions": ["string"],
+    "governing_law": "string",
+    "dispute_resolution": "string"
+  }
+}
