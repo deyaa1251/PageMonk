@@ -7,9 +7,9 @@ import shutil
 from typing import List, Optional
 import json
 
-from .database import get_db, Document, Schema
-from .models import DocumentResponse, SchemaCreate, SchemaResponse, ParseRequest, StructureRequest
-from .processor import processor
+from database import get_db, Document, Schema
+from models import DocumentResponse, SchemaCreate, SchemaResponse, ParseRequest, StructureRequest
+from processor import processor
 
 app = FastAPI(title="PageMonk", description="Document parsing and extraction service", version="1.0.0")
 
@@ -148,6 +148,13 @@ async def get_document(document_id: int, db: Session = Depends(get_db)):
     if not document:
         raise HTTPException(status_code=404, detail="Document not found")
     return document
+
+@app.delete("/delete_all_documents")
+async def delete_all_document(db: Session = Depends(get_db)):
+    count = db.query(Document).delete()
+    db.query(Document).delete()
+    db.commit()
+    return {f"Deleted {count} documents"}
 
 @app.post("/schemas", response_model=SchemaResponse)
 async def create_schema(schema: SchemaCreate, db: Session = Depends(get_db)):

@@ -118,7 +118,7 @@ class DocumentProcessor:
             """
             
             response = ollama.chat(
-                model='qwen2.5:0.5b',
+                model='qwen3:0.6b',
                 messages=[{
                     'role': 'user',
                     'content': schema_prompt
